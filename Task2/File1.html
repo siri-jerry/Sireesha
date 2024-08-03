@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Delivery Application</h1>
+        <form id="groceryForm">
+            <fieldset>
+                <legend>Select your groceries:</legend>
+                <label>
+                    <input type="checkbox" name="item" value="Apple" data-price="0.5"> Apple - $0.50
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Banana" data-price="0.3"> Banana - $0.30
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Milk" data-price="1.2"> Milk - $1.20
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Bread" data-price="1.0"> Bread - $1.00
+                </label>
+                <button type="button" onclick="updateOrder()">Update Order</button>
+            </fieldset>
+        </form>
+        <div id="orderSummary">
+            <h2>Order Summary</h2>
+            <p><strong>Items:</strong> <span id="itemsList">None</span></p>
+            <p><strong>Total Price:</strong> $<span id="totalPrice">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
